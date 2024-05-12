@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <img src="image 5.jpg" alt="Quiz Website Logo" class="logo">
+        CODEFL
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="login.html" class="neon">Login</a></li>
+          <li><a href="registration.html" class="neon">Register</a></li>
+          <li><a href="about.html" class="neon">About Us</a></li>
+          <li><a href="feedback.html" class="neon">Feedback</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h2>Welcome to our Quiz Website!</h2>
+      <p>Test your knowledge with our fun and challenging quizzes. Choose from a variety of topics.</p>
+      <a href="#" class="btn">Start Quiz</a>
+    </div>
+  </main>
+
+  <main>
+    <div class="container">
+      <div class="slides">
+        <div class="slide">
+         <a href="https://www.geeksforgeeks.org/html-tutorial/"> <img src="html.jpg"alt="Slide 1"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.geeksforgeeks.org/css-tutorial/"><img src="css.jpg" alt="Slide 2"></a>
+        </div>
+        <div class="slide">
+         <a href="https://www.geeksforgeeks.org/java/"> <img src="java1.jpg" alt="Slide 3"></a>
+        </div>
+        <div class="slide">
+         <a href="https://www.geeksforgeeks.org/java/"><img src="python1.jpg" alt="Slide 4"></a>
+        </div>
+        <div class="slide">
+         <a href="https://www.geeksforgeeks.org/javascript/"> <img src="javascript.jpg" alt="Slide 5"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="contact-section">
+        <div class="contact-info">
+          <p>123 Main Street, City, Country</p>
+          <p>Phone: +1234567890</p>
+          <p>Email: info@example.com</p>
+        </div>
+        <p>DEVELOPED BY KULSOOM & VAISHNAVI</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var slideIndex = 0;
+    var slides = document.querySelectorAll('.slide');
+    var totalSlides = slides.length;
+
+    function showSlide(n) {
+      slideIndex = (n + totalSlides) % totalSlides;
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.transform = 'translateX(' + ((i - slideIndex) * 10) + '%)';
+      }
+    }
+
+    function nextSlide() {
+      showSlide(slideIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(slideIndex - 1);
+    }
+
+    // Automatic slide change every 20 seconds
+    setInterval(nextSlide, 400);
+  </script>
+</body>
+</html>
+    
+</body>
+</html>

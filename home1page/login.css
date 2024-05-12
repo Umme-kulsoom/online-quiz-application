@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('backgeoundimage.jpg');
+    background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+.login-container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color:#555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #333;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+

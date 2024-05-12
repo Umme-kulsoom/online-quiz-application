@@ -1,0 +1,67 @@
+body{margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('backgeoundimage.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    }
+    
+    header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    header .logo {
+        width: 50px; /* Adjust width as needed */
+        margin-right: 10px; /* Adjust margin as needed */
+        height: 30px;
+        }
+    header h1 {
+            margin: 0;
+            font-size: 24px; /* Adjust font size as needed */
+            color: #fff; /* White text color */
+            display: flex;
+            align-items: center; /* Vertically align items */
+            }
+    
+   
+    nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+    nav ul li:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+    }
+    
+    nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    }
+    
+    nav ul li a:hover {
+    background-color: #fff; /* White background on hover */
+    color: #30e9ff; /* Neon green text color on hover */
+    }
+    main .about{
+        color: #fff;
+        text-align: center;
+
+    }    

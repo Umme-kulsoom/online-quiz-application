@@ -1,0 +1,158 @@
+body{margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-image: url('backgeoundimage.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.container {
+max-width: 960px;
+margin: 0 auto;
+padding: 0 20px;
+
+}
+
+header {
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+padding: 20px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .logo {
+width: 50px; /* Adjust width as needed */
+margin-right: 10px; /* Adjust margin as needed */
+height: 30px;
+}
+
+header h1 {
+margin: 0;
+font-size: 24px; /* Adjust font size as needed */
+color: #fff; /* White text color */
+display: flex;
+align-items:center; /* Vertically align items */
+
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+
+float: left;
+}
+
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+nav ul li:last-child {
+margin-right: 0; /* Remove right margin for the last item */
+}
+
+nav ul li a {
+text-decoration: none;
+color: #fff; /* White text color */
+padding: 10px 20px;
+border-radius: 5px;
+}
+
+nav ul li a:hover {
+background-color: #fff; /* White background on hover */
+color: #30e9ff; /* Neon green text color on hover */
+}
+
+main {
+padding: 100px 0;
+text-align: center;
+}
+
+main h2 {
+font-size: 48px;
+color: #fff; /* White text color */
+}
+
+main p {
+font-size: 18px;
+color: #fff; /* White text color */
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 20px;
+}
+
+.btn:hover {
+background-color: #0056b3;
+}
+
+footer {
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+padding: 20px 0;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+color: #fff; /* White text color */
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 350px; /* Adjust width as needed */
+  scroll-snap-align: start;
+  border: 2px solid #00FFEA; /* Neon blue border */
+  border-radius: 10px;
+  margin-right: 5px; /* Adjust margin between slides */
+  transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.slide img {
+  width: 350px;
+  height:200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contact-section {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info {
+  color: #fff; /* White text color */
+  margin-bottom: 20px;
+}
+
+/* Style for navigation buttons */
+.slide-buttons {
+  margin-top: 20px;
+}
+
+.slide-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.slide-buttons button:hover {
+  background-color: #0056b3;
+}
